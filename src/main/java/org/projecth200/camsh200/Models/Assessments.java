@@ -2,12 +2,19 @@ package org.projecth200.camsh200.Models;
 
 import jakarta.persistence.*;
 
-@Entity("assessment")
+@Entity(name="assessment")
 public class Assessments {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long assessemntid;
     @Column
-    private String
+    private AssessmentType assessmentType;
+    @Column
+    private double assessmentWeight;
+    @Column
+    @ManyToOne
+    @JoinColumn(columnDefinition = "courseId", referencedColumnName = "courseId")
+    private Courses courses;
+
 }
