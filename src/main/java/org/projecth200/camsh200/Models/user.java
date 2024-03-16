@@ -5,5 +5,5 @@ public class user {
     private String memberId;
     public String username;
     private String password;
-    private
+    private roles roles;
 }
