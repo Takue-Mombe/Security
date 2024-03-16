@@ -16,6 +16,37 @@ public class Assessments {
     @Column
     @ManyToOne
     @JoinColumn(columnDefinition = "courseId", referencedColumnName = "courseId")
-    private Courses courses;
+    private Courses courseId;
 
+    public Long getAssessemntid() {
+        return assessemntid;
+    }
+
+    public void setAssessemntid(Long assessemntid) {
+        this.assessemntid = assessemntid;
+    }
+
+    public AssessmentType getAssessmentType() {
+        return assessmentType;
+    }
+
+    public void setAssessmentType(AssessmentType assessmentType) {
+        this.assessmentType = assessmentType;
+    }
+
+    public double getAssessmentWeight() {
+        return assessmentWeight;
+    }
+
+    public void setAssessmentWeight(double assessmentWeight) {
+        this.assessmentWeight = assessmentWeight;
+    }
+
+    public void setCourseId(Courses courseId) {
+        this.courseId = courseId;
+    }
+
+    public Courses getCourseId() {
+        return courseId;
+    }
 }
