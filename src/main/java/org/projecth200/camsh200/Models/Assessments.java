@@ -1,6 +1,7 @@
 package org.projecth200.camsh200.Models;
 
 import jakarta.persistence.*;
+import org.projecth200.camsh200.Models.Enums.AssessmentType;
 
 @Entity(name="assessment")
 public class Assessments {
